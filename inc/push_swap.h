@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reldahli <reldahli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lbrusa <lbrusa@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 12:57:08 by reldahli          #+#    #+#             */
-/*   Updated: 2024/05/07 15:20:30 by reldahli         ###   ########.fr       */
+/*   Updated: 2024/05/14 17:52:04 by lbrusa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include <stdbool.h>
 # include <limits.h>
-# include "../libft/inc/libft.h"
-# include "../libft/inc/ft_printf.h"
+# include <libft.h>
+// removed include printf.h because in libft.h
 
 typedef struct s_stack_node
 {

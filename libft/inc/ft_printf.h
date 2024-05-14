@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reldahli <reldahli@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: lbrusa <lbrusa@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 10:38:33 by reldahli          #+#    #+#             */
-/*   Updated: 2024/02/19 10:38:35 by reldahli         ###   ########.fr       */
+/*   Updated: 2024/05/14 17:50:13 by lbrusa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,5 @@ int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int n);
 int	ft_puthex(long unsigned int n, int upper);
 int	ft_putptr(long long unsigned int n);
+
 #endif

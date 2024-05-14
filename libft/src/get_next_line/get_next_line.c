@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reldahli <reldahli@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: lbrusa <lbrusa@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 10:52:55 by reldahli          #+#    #+#             */
-/*   Updated: 2024/01/30 10:52:57 by reldahli         ###   ########.fr       */
+/*   Updated: 2024/05/14 17:07:09 by lbrusa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*------------------------------------------------------------------------ */
+
 /* The main function to get the next line (fish) from the file descriptor. */
 /* Alex (get_next_line) gracefully reads lines from the                    */
 /* magical aquarium (input file) using the cup (buffer). Alex aims to find */
@@ -27,7 +27,7 @@
 /* further examination.                                                    */
 /* ----------------------------------------------------------------------- */
 
-#include "../../inc/get_next_line.h"
+#include "get_next_line.h"
 
 char	*append_buffer(char *basin_buffer, char *read_buffer)
 {
