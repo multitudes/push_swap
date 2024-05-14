@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/push_swap.h"
+#include <push_swap.h>
 
 int	error_syntax(char *str_n)
 {

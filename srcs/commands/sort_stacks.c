@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/push_swap.h"
+#include <push_swap.h>
 
 static void	rev_rotate_both(t_stack_node **a,
 							t_stack_node **b,

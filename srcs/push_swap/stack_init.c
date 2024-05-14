@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/push_swap.h"
+#include <push_swap.h>
 
 static void	append_node(t_stack_node **stack, int n)
 {

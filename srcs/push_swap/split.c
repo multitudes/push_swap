@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/push_swap.h"
+#include <push_swap.h>
 
 static int	count_words(char *s, char c)
 {
