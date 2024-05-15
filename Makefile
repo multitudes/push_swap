@@ -12,6 +12,7 @@ LIBFT				= 	$(LIBFT_DIR)libft.a
 # This will allow to use the bracket notation for libft. I already changed the 
 # header files to use the #include<libft.h> file
 INCLUDES			=  	-I.$(LIBFT_DIR) -I./inc/
+HDRS 				= 	$(addprefix inc/ , push_swap.h)
 
 # Compiler and CFlags - need to use cc instead of gcc
 CC					= 	cc
@@ -60,7 +61,7 @@ $(LIBFT):
 					make -C $(LIBFT_DIR)
 
 
-$(NAME): 			$(OBJS) $(LIBFT)
+$(NAME): 			$(OBJS) $(LIBFT) $(HDRS)
 					$(CC) $(CFLAGS) $(INCLUDES) $(OBJS) $(LIBFT) -o $(NAME)
 
 # Compile object files from source files
