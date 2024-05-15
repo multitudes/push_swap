@@ -6,7 +6,7 @@
 #    By: lbrusa <lbrusa@student.42berlin.de>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 13:32:11 by reldahli          #+#    #+#              #
-#    Updated: 2024/05/14 17:49:18 by lbrusa           ###   ########.fr        #
+#    Updated: 2024/05/15 11:41:35 by lbrusa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,13 +83,15 @@ SRC 			= $(FTIS_FILES) $(FTMEM_FILES) $(FTPUT_FILES) \
 
 # Apply the pattern substitution to each source file in SRC and produce a corresponding list of object files in the OBJ_DIR
 OBJ 			= $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRC))
+
+HDRS			= $(INC)libft.h $(INC)ft_printf.h $(INC)get_next_line.h
 # Build rules
 all: 			$(NAME)
 
 $(NAME): 		$(OBJ)
 				$(AR) $(NAME) $(OBJ)
 
-$(OBJ_DIR)%.o:	$(SRC_DIR)%.c
+$(OBJ_DIR)%.o:	$(SRC_DIR)%.c $(HDRS)
 				mkdir -p $(@D)
 				$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
